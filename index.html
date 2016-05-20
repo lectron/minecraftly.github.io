@@ -33,6 +33,17 @@
 
   <body>
 <!-- Header. -->
+<style>
+.demo-layout-transparent {
+  background: url('http://66.media.tumblr.com/a6e784a4fd861cce71fda4aefdf8b285/tumblr_npwg3k8YOT1s196e4o2_500.png') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
@@ -63,7 +74,10 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here -->asdfsdfasfdsfsd</div>
+    <div class="page-content">
+      <!-- Your content goes here -->
+      My content
+    </div>
   </main>
 </div>
 
