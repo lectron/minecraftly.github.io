@@ -199,7 +199,7 @@
       <div style="text-align: center; background-color: #0091ea; padding-top:5%; padding-bottom:5%; padding-left: 7%; padding-right: 7%;">
       <font color="#fff">
       <h3>Try us out</h3>
-      <h5>Start playing for free</h5>
+      <h5>Start playing with <span class="player-count" style="color:#0091ea;font-weight:bold;"></span> players online right now!</h5>
       </font>
       <div style="height: 10px;"></div>
       <a href="#play">
@@ -266,4 +266,30 @@
 <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 <script src="//load.sumome.com/" data-sumo-site-id="b01a4dd899b0790baaf2a58711a4748cba340ee6491819fa89b9fc40b9442901" async="async"></script>
 <script>!function(){window.onload=function(){var a=document.createElement("script");a.src='https://resend.io/widget.js',a.async=!0,a.onload=function(){__init('RAMwQJ2ZgvwxhI8w')},document.getElementsByTagName("head")[0].appendChild(a)}}();</script></html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    var interval = 1000;   //number of mili seconds between each call
+    var refresh = function() {
+    $.getJSON("https://mcapi.ca/query/mc.vi.et/players",function(json){
+          if (json.status !== true) {
+            // error
+            $("#players .p1").text('The server is Offline').addClass('server-error');
+        } else {
+            // success
+            $("#players .p1").text('There are');
+            $("#players .p2").text('players online');
+            $(".player-count").html(json.players.online);
+            setTimeout(function(){ $('.player-count').removeClass('zoomIn').addClass('zoomOut') }, 14350); 
+            setTimeout(function(){ $('.player-count').removeClass('zoomOut').addClass('zoomIn') }, 0);
+        }
+    });
+    setTimeout(function() {
+        refresh();
+            },
+        interval);
+            }
+        refresh();
+});
+</script>
 </html>
