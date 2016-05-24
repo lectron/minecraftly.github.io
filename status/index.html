@@ -1,12 +1,16 @@
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
 </head>
+
+<body>
+  There are <span class="player-count" style="color:#0091ea;font-weight: bold;"></span> players online right now!
+</body>
 
 <script>
 $(document).ready(function () {
     var interval = 100;   //number of mili seconds between each call
     var refresh = function() {
-    $.getJSON("http://mcapi.ca/query/m.ly/players",function(json){
+    $.getJSON("https://mcapi.ca/query/m.ly/players",function(json){
           if (json.status !== true) {
             // error
             $("#players .p1").text('The server is Offline').addClass('server-error');
@@ -27,7 +31,3 @@ $(document).ready(function () {
         refresh();
 });
 </script>
-
-<body>
-There are <span class="player-count" style="color:#0091ea;font-weight: bold;"></span> players online right now!
-</body>
