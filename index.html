@@ -269,7 +269,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
 <script>
 $(document).ready(function () {
-    var interval = 1000;   //number of mili seconds between each call
+    var interval = 100;   //number of mili seconds between each call
     var refresh = function() {
     $.getJSON("https://mcapi.ca/query/mc.vi.et/players",function(json){
           if (json.status !== true) {
