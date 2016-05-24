@@ -2,10 +2,6 @@
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
 </head>
 
-<body>
-  There are <span class="player-count" style="color:#0091ea;font-weight: bold;"></span> players online right now!
-</body>
-
 <script>
 $(document).ready(function () {
     var interval = 5000;   //number of mili seconds between each call
@@ -31,3 +27,7 @@ $(document).ready(function () {
         refresh();
 });
 </script>
+
+<body>
+  <h1>There are <span class="player-count" style="color:#0091ea;font-weight:bold"></span> players online right now!</h1>
+</body>
