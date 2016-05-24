@@ -8,7 +8,7 @@
 
 <script>
 $(document).ready(function () {
-    var interval = 5000;   //number of mili seconds between each call
+    var interval = 10000;   //number of mili seconds between each call
     var refresh = function() {
     $.getJSON("https://mcapi.ca/query/mc.vi.et/players",function(json){
           if (json.status !== true) {
