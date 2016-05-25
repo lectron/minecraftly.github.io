@@ -6,7 +6,7 @@
 $(document).ready(function () {
     var interval = 10000;   //number of mili seconds between each call
     var refresh = function() {
-    $.getJSON("https://http://minecraft-ly.appspot.com/",function(json){
+    $.getJSON("https://minecraft-ly.appspot.com/",function(json){
           if (json.status !== true) {
             // error
             $("#players .p1").text('The server is Offline').addClass('server-error');
