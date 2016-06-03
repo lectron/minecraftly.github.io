@@ -12,43 +12,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
   </head>
-
+<div id="header"></div><br/>
   <body>
-<!-- Header. -->
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Minecraftly</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="https://minecraftly.com">Home</a>
-        <a class="mdl-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
-        <a class="mdl-navigation__link" href="http://www.minecraftforum.net/forums/servers/pc-servers/2170660" target="_blank">Forums</a>
-        <a class="mdl-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
-        <a class="mdl-navigation__link" href="https://github.com/minecraftly/minecraftly/wiki" target="_blank">Wiki</a>
-        <a class="mdl-navigation__link" href="https://app.minecraftly.com/" target="_blank"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Login</button></a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Minecraftly</span>
-    <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="https://minecraftly.com">Home</a>
-        <a class="mdl-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
-        <a class="mdl-navigation__link" href="http://www.minecraftforum.net/forums/servers/pc-servers/2170660" target="_blank">Forums</a>
-        <a class="mdl-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
-        <a class="mdl-navigation__link" href="https://github.com/minecraftly/minecraftly/wiki" target="_blank">Wiki</a>
-        <a class="mdl-navigation__link" href="https://app.minecraftly.com/" target="_blank"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Login</button></a>
-    </nav>
-  </div>
-
   <main class="mdl-layout__content">
-  <div id="header"></div><br/>
     <div class="page-content">
       <div style="background-image: url(images/carousel.jpg); background-repeat: no-repeat; background-size: cover; background-color: #0091ea; padding-top: 3%; padding-bottom: 3%;padding-left:5%;padding-right:5%;">
         <div class="mdl-grid">
