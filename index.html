@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/GoogleChrome/dialog-polyfill/master/dialog-polyfill.css" />
   </head>
   <!-- /HEAD -->
   
@@ -63,29 +62,7 @@
         
         <div style="height: 20px;"></div>
         
-        <button id="show-dialog" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">PLAY NOW FOR FREE</button>
-        <dialog class="mdl-dialog">
-        <h5 class="mdl-dialog__title">It's easy!</h5>
-        <div class="mdl-dialog__content">
-          <p>Add <b>m.ly</b> as your server address and play!</p>
-        </div>
-        <div class="mdl-dialog__actions">
-          <button type="button" class="mdl-button close">OK</button>
-        </div>
-        </dialog>
-  <script>
-    var dialog = document.querySelector('dialog');
-    var showDialogButton = document.querySelector('#show-dialog');
-    if (! dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
-    }
-    showDialogButton.addEventListener('click', function() {
-      dialog.showModal();
-    });
-    dialog.querySelector('.close').addEventListener('click', function() {
-      dialog.close();
-    });
-  </script>
+        <a href="//minecraftly.com/play.html"><button id="show-dialog" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">PLAY NOW FOR FREE</button></a>
         
         <div style="height: 20px;"></div>
         
@@ -296,13 +273,6 @@
   <!-- /BODY -->
 
 <!-- JAVASCRIPT -->
-    <script src="https://raw.githubusercontent.com/GoogleChrome/dialog-polyfill/master/dialog-polyfill.js"></script>
-    <script>
-    var dialog = document.querySelector('dialog');
-    dialogPolyfill.registerDialog(dialog);
-    // Now dialog acts like a native <dialog>.
-    dialog.showModal();
-    </script>
   <script src="//load.sumome.com/" data-sumo-site-id="b01a4dd899b0790baaf2a58711a4748cba340ee6491819fa89b9fc40b9442901" async="async"></script>
   <script>
     window.intercomSettings = {
