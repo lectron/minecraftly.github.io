@@ -62,15 +62,9 @@
         
         <div style="height: 20px;"></div>
         
-        <a href="#play">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-          PLAY NOW FOR FREE
-          </button>
-        </a>
-        
-        <button id="show-dialog" type="button" class="mdl-button">START PLAYING FOR FREE</button>
+        <button id="show-dialog" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">PLAY NOW FOR FREE</button>
         <dialog class="mdl-dialog">
-          <h4 class="mdl-dialog__title">Add m.ly as your server address</h4>
+          <h4 class="mdl-dialog__title">As easy as 1 2 3</h4>
           <div class="mdl-dialog__content">
             <p>
               Click the "Add Server" button, simply put <b>m.ly</b> as server address. Click "Done".
@@ -81,19 +75,6 @@
             <button type="button" class="mdl-button close">CANCEL</button>
           </div>
         </dialog>
-        <script>
-        var dialog = document.querySelector('dialog');
-        var showDialogButton = document.querySelector('#show-dialog');
-        if (! dialog.showModal) {
-          dialogPolyfill.registerDialog(dialog);
-        }
-        showDialogButton.addEventListener('click', function() {
-          dialog.showModal();
-        });
-        dialog.querySelector('.close').addEventListener('click', function() {
-          dialog.close();
-        });
-        </script>
         
         <div style="height: 20px;"></div>
         
@@ -311,6 +292,19 @@
     };
   </script>
   <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/t02jhyr0';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+  <script>
+  var dialog = document.querySelector('dialog');
+  var showDialogButton = document.querySelector('#show-dialog');
+  if (! dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+  }
+  showDialogButton.addEventListener('click', function() {
+    dialog.showModal();
+  });
+  dialog.querySelector('.close').addEventListener('click', function() {
+    dialog.close();
+  });
+  </script>
 <!-- /JAVASCRIPT -->
 
 </html>
