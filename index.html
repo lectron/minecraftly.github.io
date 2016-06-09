@@ -13,17 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.min.js"></script>
-        <dialog class="mdl-dialog">
-          <h4 class="mdl-dialog__title">It's easy!</h4>
-          <div class="mdl-dialog__content">
-            <p>1. Open Minecraft PC client on Windows, Mac or Linux, then choose "Multiplayer" mode.</p>
-            <p>2. Click the "Add Server" button, simply put <b>m.ly</b> as server address. Click "Done".</p>
-            <p>3. Start playing with friends!</p>
-          </div>
-          <div class="mdl-dialog__actions">
-            <button type="button" class="mdl-button close">OK</button>
-          </div>
-        </dialog>
   </head>
   <!-- /HEAD -->
   
@@ -74,6 +63,30 @@
         <div style="height: 20px;"></div>
         
         <button id="show-dialog" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">PLAY NOW FOR FREE</button>
+        <dialog class="mdl-dialog">
+          <h4 class="mdl-dialog__title">It's easy!</h4>
+          <div class="mdl-dialog__content">
+            <p>1. Open Minecraft PC client on Windows, Mac or Linux, then choose "Multiplayer" mode.</p>
+            <p>2. Click the "Add Server" button, simply put <b>m.ly</b> as server address. Click "Done".</p>
+            <p>3. Start playing with friends!</p>
+          </div>
+          <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button close">OK</button>
+          </div>
+        </dialog>
+  <script>
+  var dialog = document.querySelector('dialog');
+  var showDialogButton = document.querySelector('#show-dialog');
+  if (! dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+  }
+  showDialogButton.addEventListener('click', function() {
+    dialog.showModal();
+  });
+  dialog.querySelector('.close').addEventListener('click', function() {
+    dialog.close();
+  });
+  </script>
         
         <div style="height: 20px;"></div>
         
@@ -291,19 +304,6 @@
     };
   </script>
   <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/t02jhyr0';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-  <script>
-  var dialog = document.querySelector('dialog');
-  var showDialogButton = document.querySelector('#show-dialog');
-  if (! dialog.showModal) {
-    dialogPolyfill.registerDialog(dialog);
-  }
-  showDialogButton.addEventListener('click', function() {
-    dialog.showModal();
-  });
-  dialog.querySelector('.close').addEventListener('click', function() {
-    dialog.close();
-  });
-  </script>
 <!-- /JAVASCRIPT -->
 
 </html>
