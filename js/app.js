@@ -32,7 +32,7 @@ angular.module('MinecraftlyApp', deps)
                     })
             .state('app.home', {
                         cache: false,
-                        url: "",
+                        url: "/",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/home.html",
@@ -50,6 +50,36 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
+			.state('app.vote', {
+                        cache: false,
+                        url: "/vote",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/vote.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
+			.state('app.team', {
+                        cache: false,
+                        url: "/team",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/team.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
+			.state('app.about', {
+                        cache: false,
+                        url: "/about",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/about.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
@@ -60,6 +90,6 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     });
-            $urlRouterProvider.otherwise('');
+            $urlRouterProvider.otherwise('/');
         });
         
