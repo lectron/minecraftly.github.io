@@ -1,0 +1,9 @@
+#play md-pagination-wrapper
+{
+    margin:0 auto;
+    position:relative;
+}
+md-progress-linear .md-bar
+{
+    background:rgb(255,64,129);
+}
