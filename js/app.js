@@ -42,7 +42,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.play', {
                         cache: false,
-                        url: "play",
+                        url: "/play",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/play.html",
@@ -52,7 +52,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.vote', {
                         cache: false,
-                        url: "vote",
+                        url: "/vote",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/vote.html",
@@ -62,7 +62,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.team', {
                         cache: false,
-                        url: "team",
+                        url: "/team",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/team.html",
@@ -72,7 +72,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.about', {
                         cache: false,
-                        url: "about",
+                        url: "/about",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/about.html",
@@ -82,7 +82,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.education', {
                         cache: false,
-                        url: "education",
+                        url: "/education",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/education.html",
@@ -92,7 +92,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.jobs', {
                         cache: false,
-                        url: "jobs",
+                        url: "/jobs",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/jobs.html",
@@ -102,7 +102,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.terms', {
                         cache: false,
-                        url: "terms",
+                        url: "/terms",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/terms.html",
@@ -112,7 +112,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.privacy', {
                         cache: false,
-                        url: "privacy",
+                        url: "/privacy",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/privacy.html",
@@ -122,7 +122,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 			.state('app.404', {
                         cache: false,
-                        url: "404.html",
+                        url: "/404.html",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/404.html",
@@ -132,7 +132,7 @@ angular.module('MinecraftlyApp', deps)
                     })
 		    .state('app.features', {
                         cache: false,
-                        url: "features",
+                        url: "/features",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/features.html",
