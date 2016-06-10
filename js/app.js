@@ -49,7 +49,7 @@ angular.module('MinecraftlyApp', deps)
                                 controller: 'FeaturesCtrl'
                             }
                         }
-                    });
+                    })
             $urlRouterProvider.otherwise('/home');
 			.state('app.play', {
                         cache: false,
@@ -60,6 +60,6 @@ angular.module('MinecraftlyApp', deps)
                                 controller: 'PlayCtrl'
                             }
                         }
-                    })
+                    });
         });
         
