@@ -11,6 +11,9 @@ angular.module('MinecraftlyAppControllers')
                 $mdDialog.show({
                     controller: function ($scope, $localStorage, $rootScope, $mdDialog) {
                         $scope.user = {};
+			$scope.cancel = function(){
+				$mdDialog.cancel();		
+			}
                         $scope.login = function () {
                             $localStorage.loading = 1;
                             API.login($scope.user.email, $scope.user.password).then(function (resp) {
@@ -69,17 +72,17 @@ angular.module('MinecraftlyAppControllers')
                     email: $localStorage.user.email,
                     created_at: Date.now()
                 });
+            }else{
+	     	Intercom.boot();
             }
-
         })
         .controller('HomeCtrl', function ($scope) {
 
         })
         .controller('FeaturesCtrl', function ($scope) {
 		
-		})
+	})	
+	.controller('PlayCtrl', function ($scope) {
 		
-		.controller('PlayCtrl', function ($scope) {
-		
-		})
+	});
 		
