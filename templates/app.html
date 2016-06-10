@@ -21,14 +21,14 @@
                 </nav>
             </div>
         </header>
-        <div class="md-layout__drawer">
-            <span class="md-layout-title">Minecraftly</span>
-            <nav class="md-navigation">
-                <a class="md-navigation__link" ui-sref="app.home">Home</a>
-                <a class="md-navigation__link" ui-sref="app.features">Features</a>
-                <a class="md-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
-                <a class="md-navigation__link" href="https://www.reddit.com/r/minecraftly" target="_blank">Community</a>
-                <a class="md-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Minecraftly</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" ui-sref="app.home">Home</a>
+                <a class="mdl-navigation__link" ui-sref="app.features">Features</a>
+                <a class="mdl-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
+                <a class="mdl-navigation__link" href="https://www.reddit.com/r/minecraftly" target="_blank">Community</a>
+                <a class="mdl-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
                 <button ng-click="$storage.loggedIn == 1 ? logout() : showLogin()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">{{$storage.loggedIn==1?"Logout":"Login"}}</button>
             </nav>
         </div>
