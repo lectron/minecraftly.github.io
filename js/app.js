@@ -120,6 +120,16 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
+			.state('app.404', {
+                        cache: false,
+                        url: "/404.html",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/404.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
