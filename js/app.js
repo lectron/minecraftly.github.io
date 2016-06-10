@@ -30,7 +30,7 @@ angular.module('MinecraftlyApp', deps)
                         templateUrl: "templates/app.html",
                         controller: 'AppCtrl'
                     })
-                    .state('app.home', {
+            .state('app.home', {
                         cache: false,
                         url: "/home",
                         views: {
@@ -51,5 +51,15 @@ angular.module('MinecraftlyApp', deps)
                         }
                     });
             $urlRouterProvider.otherwise('/home');
+			.state('app.play', {
+                        cache: false,
+                        url: "/play",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/play.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
         });
         
