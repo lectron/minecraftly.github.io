@@ -11,6 +11,8 @@ var deps = [
 angular.module("MinecraftlyAppControllers", []);
 angular.module("MinecraftlyAppServices", []);
 angular.module('MinecraftlyApp', deps)
+        .run(function ($window) {
+        })
         .config(function ($stateProvider, $locationProvider, $urlRouterProvider, IntercomProvider) {// $mdThemingProvider, $mdIconProvider, 
             IntercomProvider.init('t02jhyr0');
 //            $mdThemingProvider.theme('MinecraftlyTheme')
@@ -109,7 +111,5 @@ angular.module('MinecraftlyApp', deps)
                         }
                     });
             $urlRouterProvider.otherwise('/');
-        })
-		
-        .run(function ($window) {
         });
+        
