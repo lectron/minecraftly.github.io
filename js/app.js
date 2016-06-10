@@ -40,17 +40,6 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
-			.state('app.play', {
-                        cache: false,
-                        url: "/play",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/play.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    })
-			$urlRouterProvider.otherwise('/home')
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
