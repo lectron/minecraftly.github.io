@@ -80,6 +80,26 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
+			.state('app.education', {
+                        cache: false,
+                        url: "/education",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/education.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
+			.state('app.jobs', {
+                        cache: false,
+                        url: "/jobs",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/jobs.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
