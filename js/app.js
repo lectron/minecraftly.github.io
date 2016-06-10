@@ -22,7 +22,7 @@ angular.module('MinecraftlyApp', deps)
 //            $mdThemingProvider.setDefaultTheme('MinecraftlyTheme');
 //            $mdIconProvider
 //                    .defaultIconSet('/img/mdi.svg');
-            $locationProvider.html5Mode(true);
+//            $locationProvider.html5Mode(true);
             $stateProvider
                     .state('app', {
                         url: "",
