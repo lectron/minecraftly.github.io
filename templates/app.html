@@ -1,8 +1,9 @@
-<!-- Main Content -->
+<!-- MAIN CONTENT -->
 <main class="mdl-layout__content">
 
     <!-- Header -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
@@ -20,18 +21,19 @@
                 </nav>
             </div>
         </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Minecraftly</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" ui-sref="app.home">Home</a>
-                <a class="mdl-navigation__link" ui-sref="app.features">Features</a>
-                <a class="mdl-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
-                <a class="mdl-navigation__link" href="https://www.reddit.com/r/minecraftly" target="_blank">Community</a>
-                <a class="mdl-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
-                <a class="mdl-navigation__link" href="https://app.minecraftly.com/"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Login</button></a>
+        <div class="md-layout__drawer">
+            <span class="md-layout-title">Minecraftly</span>
+            <nav class="md-navigation">
+                <a class="md-navigation__link" ui-sref="app.home">Home</a>
+                <a class="md-navigation__link" ui-sref="app.features">Features</a>
+                <a class="md-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
+                <a class="md-navigation__link" href="https://www.reddit.com/r/minecraftly" target="_blank">Community</a>
+                <a class="md-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
+                <a class="md-navigation__link" href="https://app.minecraftly.com/"><button class="md-button md-js-button md-button--raised md-button--colored">Login</button></a>
             </nav>
         </div>
         <!-- /Header -->
+		
         <md-progress-linear ng-show="$storage.loading == 1" md-mode="indeterminate"></md-progress-linear>
 
         <!-- Main Content -->
@@ -89,3 +91,4 @@
 		<!-- /Footer -->
     </div>
 </main>
+<!-- /MAIN CONTENT -->
