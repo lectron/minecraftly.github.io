@@ -1,19 +1,23 @@
 angular.module('MinecraftlyAppControllers')
-        .controller('AppCtrl', function ($scope, $rootScope, API, $localStorage, Intercom, $mdDialog, $mdMedia) {
+        .controller('AppCtrl', function ($scope, $rootScope, API, $localStorage, Intercom, $mdDialog, $mdMedia, $mdSidenav) {
             $scope.$storage = $localStorage;
+            $scope.openMenu = function () {
+                $mdSidenav("leftNav").toggle();
+            };
             $scope.logout = function () {
                 $localStorage.loggedIn = 0;
                 $localStorage.user = {};
             };
             $localStorage.loading = 0;
             $scope.showLogin = function (ev) {
+                $mdSidenav("leftNav").close();
                 var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
                 $mdDialog.show({
                     controller: function ($scope, $localStorage, $rootScope, $mdDialog) {
                         $scope.user = {};
-			$scope.cancel = function(){
-				$mdDialog.cancel();		
-			}
+                        $scope.cancel = function () {
+                            $mdDialog.cancel();
+                        }
                         $scope.login = function () {
                             $localStorage.loading = 1;
                             API.login($scope.user.email, $scope.user.password).then(function (resp) {
@@ -72,17 +76,17 @@ angular.module('MinecraftlyAppControllers')
                     email: $localStorage.user.email,
                     created_at: Date.now()
                 });
-            }else{
-	     	Intercom.boot();
+            } else {
+                Intercom.boot();
             }
         })
         .controller('HomeCtrl', function ($scope) {
 
         })
         .controller('FeaturesCtrl', function ($scope) {
-		
-	})	
-	.controller('PlayCtrl', function ($scope) {
-		
-	});
-		
+
+        })
+        .controller('PlayCtrl', function ($scope) {
+
+        });
+
