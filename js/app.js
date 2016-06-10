@@ -40,26 +40,27 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
-		    .state('app.features', {
-                        cache: false,
-                        url: "/features",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/features.html",
-                                controller: 'FeaturesCtrl'
-                            }
-                        }
-                    })
-            $urlRouterProvider.otherwise('/home');
 			.state('app.play', {
                         cache: false,
                         url: "/play",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/play.html",
-                                controller: 'PlayCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
+			$urlRouterProvider.otherwise('/home');
+		    .state('app.features', {
+                        cache: false,
+                        url: "/features",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/features.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    });
+            $urlRouterProvider.otherwise('/home');
         });
         
