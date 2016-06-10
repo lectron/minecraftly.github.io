@@ -35,7 +35,16 @@ angular.module('MinecraftlyAppControllers')
                                         created_at: Date.now()
                                     });
                                 } else {
-
+									$mdDialog.show(
+                                        $mdDialog.alert()
+                                        .parent(angular.element(document.querySelector('body')))
+                                        .clickOutsideToClose(true)
+                                        .title('Login failed!')
+                                        .textContent('Incorrect username and/or password.')
+                                        .ariaLabel('Login failed!')
+                                        .ok('OK')
+                                        .targetEvent(ev)
+                                        );
                                 }
 
                             }, function (j, t, a) {
