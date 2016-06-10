@@ -29,7 +29,7 @@
                 <a class="md-navigation__link" href="https://store.minecraftly.com" target="_blank"><b>Store</b></a>
                 <a class="md-navigation__link" href="https://www.reddit.com/r/minecraftly" target="_blank">Community</a>
                 <a class="md-navigation__link" href="http://blog.minecraftly.com" target="_blank">Blog</a>
-                <a class="md-navigation__link" href="https://app.minecraftly.com/"><button class="md-button md-js-button md-button--raised md-button--colored">Login</button></a>
+                <button ng-click="$storage.loggedIn == 1 ? logout() : showLogin()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">{{$storage.loggedIn==1?"Logout":"Login"}}</button>
             </nav>
         </div>
         <!-- /Header -->
