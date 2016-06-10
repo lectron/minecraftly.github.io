@@ -78,27 +78,8 @@ angular.module('MinecraftlyAppControllers')
         .controller('FeaturesCtrl', function ($scope) {
 		
 		})
-        .controller('AboutCtrl', function ($scope) {
+		
+		.controller('PlayCtrl', function ($scope) {
 		
 		})
-        .controller('PlayCtrl', function ($scope) {
 		
-		})
-        .controller('VoteCtrl', function ($scope) {
-		
-		})
-        .controller('TeamCtrl', function ($scope) {
-		
-		})
-        .controller('TermsCtrl', function ($scope) {
-		
-		})
-        .controller('PrivacyCtrl', function ($scope) {
-		
-		})
-        .controller('JobsCtrl', function ($scope) {
-		
-		})
-        .controller('EducationCtrl', function ($scope) {
-
-        });
