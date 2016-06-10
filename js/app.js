@@ -32,7 +32,7 @@ angular.module('MinecraftlyApp', deps)
                     })
             .state('app.home', {
                         cache: false,
-                        url: "",
+                        url: "/",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/home.html",
@@ -140,6 +140,6 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     });
-            $urlRouterProvider.otherwise('');
+            $urlRouterProvider.otherwise('/');
         });
         
