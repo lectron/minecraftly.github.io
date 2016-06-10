@@ -32,7 +32,7 @@ angular.module('MinecraftlyApp', deps)
                     })
                     .state('app.home', {
                         cache: false,
-                        url: "/",
+                        url: "/home",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/home.html",
@@ -47,6 +47,16 @@ angular.module('MinecraftlyApp', deps)
                             'appContent': {
                                 templateUrl: "templates/play.html",
                                 controller: 'PlayCtrl'
+                            }
+                        }
+                    });
+			.state('app.about', {
+                        cache: false,
+                        url: "/about",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/about.html",
+                                controller: 'AboutCtrl'
                             }
                         }
                     });
@@ -120,6 +130,6 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     });
-            $urlRouterProvider.otherwise('/');
+            $urlRouterProvider.otherwise('/home');
         });
         
