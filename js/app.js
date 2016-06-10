@@ -32,7 +32,7 @@ angular.module('MinecraftlyApp', deps)
                     })
                     .state('app.home', {
                         cache: false,
-                        url: "/home",
+                        url: "/",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/home.html",
@@ -40,6 +40,16 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
+		    .state('app.play', {
+                        cache: false,
+                        url: "/play",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/play.html",
+                                controller: 'PlayCtrl'
+                            }
+                        }
+                    });
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
@@ -50,6 +60,66 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     });
-            $urlRouterProvider.otherwise('/home');
+		    .state('app.vote', {
+                        cache: false,
+                        url: "/vote",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/vote.html",
+                                controller: 'VoteCtrl'
+                            }
+                        }
+                    });
+		    .state('app.team', {
+                        cache: false,
+                        url: "/team",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/team.html",
+                                controller: 'TeamCtrl'
+                            }
+                        }
+                    });
+		    .state('app.terms', {
+                        cache: false,
+                        url: "/terms",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/terms.html",
+                                controller: 'TermsCtrl'
+                            }
+                        }
+                    });
+		    .state('app.privacy', {
+                        cache: false,
+                        url: "/privacy",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/privacy.html",
+                                controller: 'PrivacyCtrl'
+                            }
+                        }
+                    });
+		    .state('app.jobs', {
+                        cache: false,
+                        url: "/jobs",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/jobs.html",
+                                controller: 'FeaturesCtrl'
+                            }
+                        }
+                    });
+		    .state('app.education', {
+                        cache: false,
+                        url: "/education",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/education.html",
+                                controller: 'EducationCtrl'
+                            }
+                        }
+                    });
+            $urlRouterProvider.otherwise('/');
         });
         
