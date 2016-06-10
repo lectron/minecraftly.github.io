@@ -32,7 +32,7 @@ angular.module('MinecraftlyApp', deps)
                     })
                     .state('app.home', {
                         cache: false,
-                        url: "/home",
+                        url: "/",
                         views: {
                             'appContent': {
                                 templateUrl: "templates/home.html",
@@ -40,26 +40,6 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
-		    .state('app.play', {
-                        cache: false,
-                        url: "/play",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/play.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
-			.state('app.about', {
-                        cache: false,
-                        url: "/about",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/about.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
@@ -70,66 +50,17 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     });
-		    .state('app.vote', {
+            $urlRouterProvider.otherwise('/');
+		    .state('app.play', {
                         cache: false,
-                        url: "/vote",
+                        url: "/play",
                         views: {
                             'appContent': {
-                                templateUrl: "templates/vote.html",
+                                templateUrl: "templates/play.html",
                                 controller: 'HomeCtrl'
                             }
                         }
                     });
-		    .state('app.team', {
-                        cache: false,
-                        url: "/team",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/team.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
-		    .state('app.terms', {
-                        cache: false,
-                        url: "/terms",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/terms.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
-		    .state('app.privacy', {
-                        cache: false,
-                        url: "/privacy",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/privacy.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
-		    .state('app.jobs', {
-                        cache: false,
-                        url: "/jobs",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/jobs.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
-		    .state('app.education', {
-                        cache: false,
-                        url: "/education",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/education.html",
-                                controller: 'HomeCtrl'
-                            }
-                        }
-                    });
-            $urlRouterProvider.otherwise('/home');
+            $urlRouterProvider.otherwise('/');
         });
         
