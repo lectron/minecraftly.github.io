@@ -46,7 +46,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/play.html",
-                                controller: 'PlayCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -56,7 +56,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/about.html",
-                                controller: 'AboutCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -66,7 +66,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/features.html",
-                                controller: 'FeaturesCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -76,7 +76,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/vote.html",
-                                controller: 'VoteCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -86,7 +86,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/team.html",
-                                controller: 'TeamCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -96,7 +96,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/terms.html",
-                                controller: 'TermsCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -106,7 +106,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/privacy.html",
-                                controller: 'PrivacyCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -116,7 +116,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/jobs.html",
-                                controller: 'FeaturesCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
@@ -126,7 +126,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/education.html",
-                                controller: 'EducationCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
