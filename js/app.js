@@ -100,6 +100,26 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
+			.state('app.terms', {
+                        cache: false,
+                        url: "/terms",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/terms.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
+			.state('app.privacy', {
+                        cache: false,
+                        url: "/privacy",
+                        views: {
+                            'appContent': {
+                                templateUrl: "templates/privacy.html",
+                                controller: 'HomeCtrl'
+                            }
+                        }
+                    })
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
