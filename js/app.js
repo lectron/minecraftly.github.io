@@ -46,7 +46,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/features.html",
-                                controller: 'FeaturesCtrl'
+                                controller: 'HomeCtrl'
                             }
                         }
                     });
