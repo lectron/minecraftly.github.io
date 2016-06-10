@@ -51,16 +51,5 @@ angular.module('MinecraftlyApp', deps)
                         }
                     });
             $urlRouterProvider.otherwise('/home');
-		    .state('app.play', {
-                        cache: false,
-                        url: "/play",
-                        views: {
-                            'appContent': {
-                                templateUrl: "templates/play.html",
-                                controller: 'PlayCtrl'
-                            }
-                        }
-                    });
-            $urlRouterProvider.otherwise('/home');
         });
         

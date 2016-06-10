@@ -79,7 +79,3 @@ angular.module('MinecraftlyAppControllers')
 		
 		})
 		
-		.controller('PlayCtrl', function ($scope) {
-		
-		})
-		
