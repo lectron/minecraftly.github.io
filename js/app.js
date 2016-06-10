@@ -36,7 +36,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/home.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -46,7 +46,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/play.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -56,7 +56,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/vote.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -66,7 +66,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/team.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -76,7 +76,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/about.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -86,7 +86,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/education.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -96,7 +96,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/jobs.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -106,7 +106,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/terms.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -116,7 +116,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/privacy.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -126,7 +126,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/404.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     })
@@ -136,7 +136,7 @@ angular.module('MinecraftlyApp', deps)
                         views: {
                             'appContent': {
                                 templateUrl: "templates/features.html",
-                                controller: 'HomeCtrl'
+                                controller: 'mainController'
                             }
                         }
                     });
