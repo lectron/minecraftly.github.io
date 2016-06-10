@@ -50,7 +50,7 @@ angular.module('MinecraftlyApp', deps)
                             }
                         }
                     })
-			$urlRouterProvider.otherwise('/home');
+			$urlRouterProvider.otherwise('/home')
 		    .state('app.features', {
                         cache: false,
                         url: "/features",
