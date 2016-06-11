@@ -90,13 +90,6 @@ angular.module('MinecraftlyAppControllers')
                 Intercom.boot();
             }
         })
-        .controller('HomeCtrl', function ($scope) {
-
-        })
-        .controller('FeaturesCtrl', function ($scope) {
-
-        })
-        .controller('PlayCtrl', function ($scope) {
+        .controller('mainController', function ($scope) {
 
         });
-

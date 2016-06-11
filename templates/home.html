@@ -7,7 +7,7 @@
 
 					<div style="height: 20px;"></div>
 
-					<md-button class="md-raised md-accent" ng-href="play">Play Now For Free</md-button>
+					<a ui-sref="app.play"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">PLAY NOW FOR FREE</button></a>
 
 
 					<div style="height: 20px;"></div>
@@ -61,7 +61,8 @@
 			<h2>Getting started is easy!</h2>
 
 			<div style="height: 20px;"></div>
-			<div ng-cloak id="play">
+			
+			<div ng-cloak>
 				<md-content>
 					<md-tabs md-dynamic-height md-border-bottom>
 						<md-tab label="one">
@@ -86,7 +87,11 @@
 				</md-content>
 			</div>
 
-			<h6><b><a href="http://mc.ly/demo" target="_blank">Don't know what Minecraft is yet? Try it out for free!</a></b></h6>
+			<p>
+				<a href="http://mc.ly/demo" target="_blank">
+					Don't know what Minecraft is yet? Try it out for free!
+				</a>
+			</p>
 
 		</div>
 
