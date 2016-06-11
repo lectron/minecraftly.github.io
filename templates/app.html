@@ -29,9 +29,14 @@
                     Blog
                 </div>
             </md-list-item>
-            <md-list-item class="md-1-line md-bg-pink" ng-href="#" ng-click="showLogin()">
+            <md-list-item class="md-1-line md-bg-pink" ng-href="#" ng-click="showLogin()" ng-show="$storage.loggedIn==0">
                 <div class="md-list-item-text text-white">
                     Login
+                </div>
+            </md-list-item>
+			<md-list-item class="md-1-line md-bg-pink" ng-href="#" ng-click="logout()" ng-hide="$storage.loggedIn==0">
+                <div class="md-list-item-text text-white">
+                    Logout
                 </div>
             </md-list-item>
         </md-list>
@@ -67,8 +72,11 @@
                 <md-button aria-label="Blog" ng-href="http://blog.minecraftly.com">
                     Blog
                 </md-button>
-                <md-button class="md-accent md-raised" aria-label="Home" ng-href="#" ng-click="showLogin()">
+                <md-button class="md-accent md-raised" aria-label="Login" ng-href="#" ng-click="showLogin()" ng-show="$storage.loggedIn==0">
                     Login
+                </md-button>
+			    <md-button aria-label="Blog" ng-click="logout()" ng-hide="$storage.loggedIn==0">
+                    Blog
                 </md-button>
             </div>
 
