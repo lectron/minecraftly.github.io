@@ -24,6 +24,7 @@ angular.module('MinecraftlyAppControllers')
                                 $localStorage.loading = 0;
                                 if (resp.data.availableProfiles.length > 0) {
                                     $localStorage.loggedIn = 1;
+                                    $localStorage.user = {};
                                     $localStorage.user.uuid = resp.data.availableProfiles[0].id;
                                     $localStorage.user.name = resp.data.availableProfiles[0].name;
                                     $localStorage.user.email = $scope.user.email;
@@ -35,16 +36,16 @@ angular.module('MinecraftlyAppControllers')
                                         created_at: Date.now()
                                     });
                                 } else {
-									$mdDialog.show(
-                                        $mdDialog.alert()
-                                        .parent(angular.element(document.querySelector('body')))
-                                        .clickOutsideToClose(true)
-                                        .title('Login failed!')
-                                        .textContent('Incorrect username and/or password.')
-                                        .ariaLabel('Login failed!')
-                                        .ok('OK')
-                                        .targetEvent(ev)
-                                        );
+                                    $mdDialog.show(
+                                            $mdDialog.alert()
+                                            .parent(angular.element(document.querySelector('body')))
+                                            .clickOutsideToClose(true)
+                                            .title('Login failed!')
+                                            .textContent('Incorrect username and/or password.')
+                                            .ariaLabel('Login failed!')
+                                            .ok('OK')
+                                            .targetEvent(ev)
+                                            );
                                 }
 
                             }, function (j, t, a) {
