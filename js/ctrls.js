@@ -80,10 +80,11 @@ angular.module('MinecraftlyAppControllers')
                     $scope.customFullscreen = (wantsFullScreen === true);
                 });
             };
-            if ($localStorage.loggedIn == 1) {
+            if ($localStorage.loggedIn == 1 && $localStorage.user && $localStorage.user.name &&$localStorage.user.email && $localStorage.user.uuid) {
                 Intercom.boot({
                     name: $localStorage.user.name,
                     email: $localStorage.user.email,
+					user_id: $localStorage.user.uuid,
                     created_at: Date.now()
                 });
             } else {
