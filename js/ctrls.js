@@ -9,6 +9,8 @@ angular.module('MinecraftlyAppControllers')
                 $localStorage.user = {};
             };
             $localStorage.loading = 0;
+            $localStorage.loggedIn = $localStorage.loggedIn || 0;
+            $localStorage.user = $localStorage.user || {};
             $scope.showLogin = function (ev) {
                 $mdSidenav("leftNav").close();
                 var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
