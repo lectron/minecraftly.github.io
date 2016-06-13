@@ -1,2 +1,1 @@
-# minecraftly.github.io
-Source for minecraftly.com
+www redirect to minecraftly.com
